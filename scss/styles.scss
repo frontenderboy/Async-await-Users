@@ -1,0 +1,77 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #333333;
+$color-red: #FF3F3A;
+
+$font: 'Poppins', sans-serif;
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-gray;
+    font-family: $font;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 50px;
+    margin: 80px 0;
+    color: $color-white;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: $color-white;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__photo {
+    border-radius: 50%;
+    border: 2px solid $color-black;
+}
+
+.name {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 25px;
+}
+
+.user-name {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.user__email {
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: $color-black;
+}
+
+.user__website-link {
+    text-decoration: none;
+    color: $color-black;
+    &:hover {
+        text-decoration: underline;
+    }
+}
